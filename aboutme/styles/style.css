@@ -39,7 +39,8 @@ element.style {
 
 @font-face {
   font-family: thiccboi;
-  src: url(../aboutme/fonts/THICCCBOI-Medium.woff2);
+  font-display: swap;
+  src: url(/aboutme/fonts/THICCCBOI-Medium.woff2) format('woff2');
 }
 
 #wrap {
