@@ -95,6 +95,7 @@ h4 {
 
 #background {
     background-color: #EDCD9A;
+    height: 725px;
 }
 
 
@@ -162,10 +163,6 @@ main section img {
     padding-top: 10px;
 }
 
-
-#background {
-    height: 725px;
-}
 
 .logo {
     width: 7.5em;
