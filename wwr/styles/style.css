@@ -35,9 +35,11 @@ nav a {
     color: #D1E6DD;
     text-decoration: none;
     font-family: "Dangrek", Arial, Helvetica;
-    padding: 0 45px;
+    padding: 30px 50px;
     font-size: 18px;
     width: 90px;
+    text-align: center;
+    
     
 }
 
