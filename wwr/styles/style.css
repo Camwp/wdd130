@@ -37,7 +37,7 @@ nav a {
     font-family: "Dangrek", Arial, Helvetica;
     padding: 30px 50px;
     font-size: 18px;
-    width: 90px;
+    width: 100%;
     text-align: center;
     
     
@@ -288,6 +288,9 @@ main section img {
     #background {
         display: none;
     }
+    #faq-background {
+        display: none;
+    }
     .mountains, .msg {
         width: 80%;
         display: block;
@@ -297,3 +300,81 @@ main section img {
         margin-top: 25px;
     }
 }
+
+/* FAQ CSS */
+
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-auto-columns: 25%;
+}
+
+.faq-title {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    text-align: center;  
+    font-size: 32px; 
+    font-family: "Tiro Tamil", Arial, Helvetica;
+    color: #5E7269;
+}
+
+.faq-accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    grid-column: 2/4;
+    margin: 10px;
+  }
+  
+  
+  .active, .faq-accordion:hover {
+    background-color: #ccc;
+  }
+  
+  
+  .faq-panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    grid-column: 2/4;
+    
+  }
+
+  #faq-background {
+    background-color: #EDCD9A;
+    height: 300px;
+    grid-column: 1/5;
+    margin-top: 75px;
+    margin-bottom: -80px;
+    grid-row: 15/15;
+  }
+
+  .contact {
+    background-color: #5E7269;
+    color: #D1E6DD;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Dangrek", Arial, Helvetica;
+    padding:15px 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+
+  .faq-msg {
+    background-color: #D1E6DD;
+    font-family: "Tiro Tamil", Arial, Helvetica;
+    padding: 35px;
+    grid-column: 2/4;
+    grid-row: 15/15;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin: 112px 0px;
+  }
