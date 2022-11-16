@@ -102,6 +102,7 @@ nav a:hover {
     justify-self: center;
     width: 100%;
     min-height: 300px;
+    max-width: 1600px;
 }
 
 .home-title {
