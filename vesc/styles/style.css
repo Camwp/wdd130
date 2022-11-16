@@ -98,6 +98,11 @@ nav a:hover {
     width: 100%;
     min-height: 300px;
 }
+#other-hero-img {
+    justify-self: center;
+    width: 100%;
+    min-height: 300px;
+}
 
 .home-title {
     color: #f4f1de;
@@ -199,6 +204,12 @@ p {
     font-family: "Arima", Arial, Helvetica;
 }
 
+#placeholder {
+    height: 450px;
+    grid-column: 1/10;
+    grid-row: 1/3;
+    margin-top: 50px;
+}
 
 #background1 {
     height: 425px;
@@ -317,6 +328,11 @@ footer .social img:hover {
         height: 600px;
         width: 2050px;
         margin-left: -350px;
+    }
+    #other-hero-img {
+        height: 550px;
+        width: 2050px;
+        margin-left: -850px;
     }
     .button-box {
         padding-top: 25px;
