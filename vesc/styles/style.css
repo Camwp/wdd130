@@ -748,7 +748,10 @@ form {
         display: none;
       }
       #board {
-        margin: 25px 0px;
+        display: block;
+        margin: auto;
+        width: 90%;
+        margin-top: 15px;
       }
       .visit-showroom {
         margin: 25px 0;
