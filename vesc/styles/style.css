@@ -50,6 +50,10 @@ nav {
 }
 
 
+#myLinks {
+    display: flex;
+}
+
 nav a {
     color: #f4f1de;
     text-decoration: none;
@@ -69,9 +73,9 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
-
-
+.icon {
+    display: none;
+}
 
 
 #hero {
@@ -103,7 +107,7 @@ nav a:hover {
     color: #f4f1de;
     font-size: 2.8em;
     font-family: "Dynapuff", Arial, Helvetica;
-    margin-top: -15px;
+    margin-top: -45px;
     text-align: center;
 }
 
@@ -266,13 +270,13 @@ p {
 
 
 #diy-background1 {
-    height: 275px;
+    height: 350px;
     grid-column: 1/10;
     grid-row: 1/3;
     margin-top: 50px;
 }
 #diy-background2 {
-    height: 275px;
+    height: 400px;
     grid-column: 1/5;
     grid-row: 3/6;
     margin-top: 50px;
@@ -283,10 +287,11 @@ p {
     grid-column: 2/8;
     grid-row: 2/2;
     text-align: center;
+    margin: 50px 0px;
 }
 
 #diy-background3 {
-    height: 275px;
+    height: 400px;
     grid-column: 5/10;
     grid-row: 3/6;
     margin-top: 50px;
@@ -306,7 +311,7 @@ p {
 }
 
 #diy-background4 {
-    height: 275px;
+    height: 450px;
     grid-column: 1/10;
     grid-row: 6/9;
     margin-top: 0px;
@@ -318,7 +323,7 @@ p {
 }
 
 #diy-background5 {
-    height: 275px;
+    height: 575px;
     grid-column: 1/10;
     grid-row: 9/12;
     margin-top: 0px;
@@ -332,7 +337,7 @@ p {
 }
 
 #diy-background6 {
-    height: 475px;
+    height: 575px;
     grid-column: 1/10;
     grid-row: 12/15;
     margin-top: 0px;
@@ -343,6 +348,7 @@ p {
     grid-column: 5/9;
     grid-row: 13/13;
     text-align: center;
+    margin: 0 60px;
 }
 
 #board {
@@ -352,7 +358,30 @@ p {
     margin: 0 -50px;
 }
 
+#diy-background7 {
+    height: 400px;
+    grid-column: 1/10;
+    grid-row: 15/18;
+    background-color: rgba(13, 76, 122, 1);
+}
 
+.ask-for-help {
+    grid-column: 2/8;
+    grid-row: 16/17;
+    background-color: rgb(239, 215, 176);
+    font-family: "Dynapuff", Arial, Helvetica;
+    padding: 35px 50px;
+    box-shadow: 6px 6px 10px rgb(35, 39, 41);
+    text-align: center;
+}
+
+#diy-finalbackground {
+    background-color: #EDCD9A; 
+    height: 100px;
+    grid-column: 1/10;
+    grid-row: 18/20;
+    margin:15px 0px;
+}
 
 
 footer {
@@ -392,13 +421,16 @@ footer .social img:hover {
     border-radius: 25%;
     width: 40px;
 }
-
-
+@media screen and (min-width: 951px) {
+    
+}
 @media screen and (max-width: 950px) {
     #hero, .home-grid {
         display: block;
         height: auto;
     }
+
+    
     nav, footer {
         flex-direction: column;
     }
@@ -406,6 +438,12 @@ footer .social img:hover {
         display: block;
         padding: 15px;
     }
+
+    
+
+
+
+    
     #hero {
         margin-top: 235px;
     }
@@ -435,7 +473,7 @@ footer .social img:hover {
 
     .mission {
         margin-top: 150px;
-        padding: 50px 100px;
+        padding: 50px 50px;
         font-size: medium;
         
     }
@@ -473,7 +511,7 @@ footer .social img:hover {
     }
     .assistance {
         margin-top: 50px;
-        padding: 50px 100px;
+        padding: 50px 50px;
         text-align: center;
         font-size: medium;
     }
@@ -485,4 +523,46 @@ footer .social img:hover {
     footer {
         margin-top: 25px;
     }
+
+
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+      
+      .topnav #myLinks {
+        display: flex;
+      }
+      
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .icon {
+        display: block;
+        color:white;
+        display: block;
+        text-align: center;
+        padding:15px;
+      }
+      .topnav a.icon {
+        color:white;
+        
+         
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
 }
+
+
+

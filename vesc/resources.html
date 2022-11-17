@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Resources | VESC</title>
 </head>
@@ -14,69 +15,157 @@
         <a id="logo_link" href="index.html">
             <img class="logo" src="images/logo_small.png" alt="VESC Logo">
         </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#" class="nav-active">Resources</a>
-            <a href="showroom.html">Showroom</a>
-            <a href="contactus.html">Contact Us</a>
-        </nav>
+        <div id="topnav">
+            <nav id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="#" class="nav-active">Resources</a>
+                <a href="showroom.html">Showroom</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+            <div class="ham-nav-icon"></div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
     </header>
-
+    
     <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+                document.getElementById("navbar").style.opacity = "1";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        window.onresize = function() {
+            resizenav()
+        };
+        function resizenav() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+            }
+        }
+
         // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
         window.onscroll = function() {
             scrollFunction()
+            normalscrollFunction()
         };
     
         function scrollFunction() {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2 && w <= "950") {
                 document.getElementById("navbar").style.opacity = "0.5";
+                document.getElementById("myLinks").style.display = "none";
+                
             } else {
                 document.getElementById("navbar").style.opacity = "1";
-                
+                document.getElementById("myLinks").style.display = "flex";
             }
         }
+    
+        function normalscrollFunction() {
+            if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
+                document.getElementById("navbar").style.opacity = "0.5";
+                
+            } else {
+                document.getElementById("navbar").style.opacity = "1";
+            }
+        }
+        
         </script>
 
 <main class="home-grid">
     <div id="diy-background1"></div>
     <section class="diy-mission">
         <h1>DIY Resources</h1>
-        <p>paragraph here</p>
+        <p>Here we offer all the resources to convert your current stock "onewheel" 
+            from Future Motion or to get all the parts to create your own model of 
+            a VESC using our components on third party hardware.</p>
     </section>
 
     <div id="diy-background2"></div>
     <section class="diy-section2">
         <h4>Components</h4>
-        <p>paragraph here</p>
+        <a>
+            <li>Speed Controllers</li>
+            <li>FOC'ers & lil FOC'ers</li>
+            <li>Controllers and Pre Assembled Parts</li>
+            <li>Parts & Accessories</li>
+            <li>Flowglider Parts</li>
+        </a>
     </section>
 
     <div id="diy-background3"></div>
     <section class="diy-section3">
         <h4>How-To</h4>
-        <p>paragraph here</p>
+        <ol type="I">
+            <li>What is a VESC?</li>
+            <li>Board Dissasembly</li>
+                <ol type="A">
+                    <li>Install Controller</li>
+                </ol>
+            <li>Reassemble Board</li>
+            <li>Customize VESC</li>
+                <ol type="A">
+                    <li>Pro Rider Settings</li>
+                </ol>
+
+        </ol>
     </section>
 
     <div id="diy-background4"></div>
     <section class="safety">
         <h4>Ability / Hazards / Safety</h4>
-        <p>paragraph here</p>
+        <p>This project is not a beginner DIY project, and requires a large amount 
+            of attention to details as well as the correct tools to complete the 
+            job. Do not begin this project if you do not believe you can complete 
+            it alone, or if you are not confident dissasembling the shell of a 
+            onewheeled device.</p>
     </section>
 
     <div id="diy-background5"></div>
     <section class="diy-info">
         <h4>Resource Info</h4>
-        <p>paragraph here</p>
+        <p>Just as there are many pros to converting your board into a VESC, or even 
+            building one from scratch, there are many cons as well. 
+            <br>Some of the pros include right to repair, extra torque, off road 
+            maneuverability, runs cooler, customizable, consistent updates and work 
+            being done from the community contributors, etc... While some of the cons 
+            include difficulty to assemble, very advanced settings that are not easy 
+            for beginners, unfamiliarity with controls, and major risk of injury due 
+            to lack of safety features. 
+            
+            <br><br>We have prepared information about and places to buy motor 
+            controllers, hub motors, tires, Bluetooth modules, motherboard protector, 
+            air pumps and other parts & tools for your own DIY VESC board. By the end 
+            of your build, you will fully understand how a VESC works and what it is 
+            capable of.</p>
     </section>
 
     <div id="diy-background6"></div>
     <img id="board" src="images/blackboard.png" alt="black board">
     <section class="visit-showroom">
         <h4>The Showroom</h4>
-        <p>paragraph here</p>
+        <p>Be sure to check out the showroom of awesome custom VESC boards!</p>
     </section>
-    
-    
+
+    <div id="diy-background7"></div>
+    <section class="ask-for-help">
+        <h4>Ask For Help</h4>
+        <p>Send us an email or schedule a build session with us to aboid unrecoverable 
+            mistakes. <br>This community exists to help others.</p>
+            <div class="button-box">
+                <a class="book" href="contactus.html">Contact Us</a>
+            </div>
+    </section>
+
+    <div id="diy-finalbackground"></div>
 </main>
 
 <footer>
