@@ -320,23 +320,12 @@ footer .social img:hover {
         padding: 15px;
     }
     #hero {
-        margin-top: 0;
+        margin-top: 235px;
     }
     #hero-msg {
         margin-top: -250px;  
     }
-    #hero-img {
-        height: 600px;
-        width: 2050px;
-        margin-left: -350px;
-    }
 
-
-    #other-hero-img {
-        height: 550px;
-        width: 15000px;
-        margin-left: -740px;
-    }
 
     
     .button-box {
@@ -365,10 +354,14 @@ footer .social img:hover {
         background: #EDCD9A;
         height: 325px;
         text-align: center;
+        padding-bottom: 25px;
     }
     .diy-resources p {
         margin: 0 25px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
+    }
+    .btn-resources {
+        margin: 250px 0;
     }
 
     .diy-img {
@@ -392,7 +385,7 @@ footer .social img:hover {
         text-align: center;
     }
     .build-sesh {
-        width: 80%;
+        width: 70%;
         display: block;
         margin: 0 auto;
     }
