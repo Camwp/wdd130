@@ -96,13 +96,7 @@ nav a:hover {
 #hero-img {
     justify-self: center;
     width: 100%;
-    min-height: 300px;
-}
-#other-hero-img {
-    justify-self: center;
-    width: 100%;
-    min-height: 300px;
-    max-width: 1600px;
+    
 }
 
 .home-title {
@@ -114,7 +108,7 @@ nav a:hover {
 }
 
 .other-home-title {
-    color: #f4f1de;
+    color: black;
     font-size: 2.8em;
     font-family: "Dynapuff", Arial, Helvetica;
     text-align: center;
@@ -201,6 +195,11 @@ h4 {
     font-size: 24px;
 }
 
+h1 {
+    font-family: "Dynapuff", Arial, Helvetica;
+    font-size: 40px;
+}
+
 p {
     font-family: "Arima", Arial, Helvetica;
 }
@@ -266,6 +265,94 @@ p {
 }
 
 
+#diy-background1 {
+    height: 275px;
+    grid-column: 1/10;
+    grid-row: 1/3;
+    margin-top: 50px;
+}
+#diy-background2 {
+    height: 275px;
+    grid-column: 1/5;
+    grid-row: 3/6;
+    margin-top: 50px;
+    background-color: #EDCD9A;
+}
+
+.diy-mission {
+    grid-column: 2/8;
+    grid-row: 2/2;
+    text-align: center;
+}
+
+#diy-background3 {
+    height: 275px;
+    grid-column: 5/10;
+    grid-row: 3/6;
+    margin-top: 50px;
+    background-color:rgba(13, 76, 122, 1);
+}
+
+.diy-section2 {
+    grid-column: 2/4;
+    grid-row: 3/6;
+    margin-top: 50px;
+}
+
+.diy-section3 {
+    grid-column: 7/9;
+    grid-row: 3/6;
+    margin-top: 50px;
+}
+
+#diy-background4 {
+    height: 275px;
+    grid-column: 1/10;
+    grid-row: 6/9;
+    margin-top: 0px;
+}
+
+.safety {
+    grid-column: 2/8;
+    grid-row: 7/7;
+}
+
+#diy-background5 {
+    height: 275px;
+    grid-column: 1/10;
+    grid-row: 9/12;
+    margin-top: 0px;
+    background-color: #EDCD9A;
+}
+
+.diy-info {
+    grid-column: 2/8;
+    grid-row: 10/10;
+    text-align: center;
+}
+
+#diy-background6 {
+    height: 475px;
+    grid-column: 1/10;
+    grid-row: 12/15;
+    margin-top: 0px;
+    background-color: white;
+}
+
+.visit-showroom {
+    grid-column: 5/9;
+    grid-row: 13/13;
+    text-align: center;
+}
+
+#board {
+    grid-column: 2/3;
+    grid-row: 13/13;
+    width: 400px;
+    margin: 0 -50px;
+}
+
+
 
 
 footer {
@@ -323,16 +410,19 @@ footer .social img:hover {
         margin-top: 235px;
     }
     #hero-msg {
-        margin-top: -250px;  
+        margin-top: 50px;  
     }
 
-
+    .other-home-title {
+        margin-top: 550px;
+    }
     
     .button-box {
         padding-top: 25px;
     }
     .home-title {
         font-size: 29px;
+        color: #0D4C7A;
     }
     #background1, #background2, #background3, #background4 { 
         display: none;
@@ -346,19 +436,21 @@ footer .social img:hover {
     .mission {
         margin-top: 150px;
         padding: 50px 100px;
+        font-size: medium;
         
     }
     .diy-resources {
-        margin-top: 100px;
+        margin-top: 85px;
         padding-top: 325px ;
         background: #EDCD9A;
         height: 325px;
         text-align: center;
-        padding-bottom: 25px;
+        padding-bottom: 75px;
     }
     .diy-resources p {
         margin: 0 25px;
         margin-bottom: 25px;
+        font-size: medium;
     }
     .btn-resources {
         margin: 250px 0;
@@ -383,6 +475,7 @@ footer .social img:hover {
         margin-top: 50px;
         padding: 50px 100px;
         text-align: center;
+        font-size: medium;
     }
     .build-sesh {
         width: 70%;
