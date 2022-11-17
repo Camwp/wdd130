@@ -476,7 +476,7 @@ footer .social img:hover {
 form {
     /* Center the form on the page */
     margin: 50px auto;
-    width: 400px;
+    width: 300px;
     /* Form outline */
     padding: 1em;
     border: 1px solid #ccc;
@@ -509,7 +509,7 @@ form {
     font: 1em sans-serif;
   
     /* Uniform text field size */
-    width: 300px;
+    width: 200px;
     box-sizing: border-box;
   
     /* Match form field borders */
@@ -657,7 +657,18 @@ form {
         margin-top: 25px;
     }
 
-
+    .contact-resources {
+        margin-top:-925px ;
+    }
+    #contact-background2 {
+        min-height: 950px;
+    }
+    #contact-finalbackground {
+        display: none;
+    }
+    .contact-info {
+        text-align: center;
+    }
 
     .topnav {
         overflow: hidden;
@@ -693,6 +704,58 @@ form {
       .topnav a:hover {
         background-color: #ddd;
         color: black;
+      }
+
+      .diy-mission {
+        margin-top: -60px;
+      }
+
+      #diy-background2 {
+        display: none;
+      }
+      #diy-background3 {
+        display: none;
+      }
+      .diy-section2 {
+        background-color: #EDCD9A;
+        padding: 60px 0px;
+        text-align: center;
+      }
+      .diy-section3 {
+        background-color: #0D4C7A;
+        padding: 60px 0px;
+        text-align: center;
+        list-style-position: inside;
+        margin-top: 0px;
+      }
+      #diy-background4 {
+        display: none;
+      }
+      .safety {
+        margin: 0px 50px;
+      }
+
+      #diy-background5 {
+        display: none;
+      }
+
+      .diy-info {
+        background-color: #EDCD9A;
+        padding: 25px 25px;
+      }
+
+      #diy-background6 {
+        display: none;
+      }
+      #board {
+        margin: 25px 0px;
+      }
+      .visit-showroom {
+        margin: 25px 0;
+      }
+
+      #diy-background7 {
+        display: none;
       }
 
 }

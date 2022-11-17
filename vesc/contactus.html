@@ -59,7 +59,7 @@
         function scrollFunction() {
             var w = window.innerWidth;
             var h = window.innerHeight;
-            if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2 && w <= "950") {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 && w <= "950") {
                 document.getElementById("navbar").style.opacity = "0.5";
                 document.getElementById("myLinks").style.display = "none";
                 
@@ -70,7 +70,7 @@
         }
     
         function normalscrollFunction() {
-            if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 document.getElementById("navbar").style.opacity = "0.5";
                 
             } else {
