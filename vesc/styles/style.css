@@ -344,8 +344,12 @@ p {
     background-color: white;
 }
 
+#howto3 {
+    margin-left: -55px;
+}
+
 .visit-showroom {
-    grid-column: 5/9;
+    grid-column: 6/9;
     grid-row: 13/13;
     text-align: center;
     margin: 0 60px;
@@ -382,6 +386,7 @@ p {
     grid-row: 18/20;
     margin:15px 0px;
 }
+
 
 
 footer {
@@ -421,9 +426,137 @@ footer .social img:hover {
     border-radius: 25%;
     width: 40px;
 }
-@media screen and (min-width: 951px) {
-    
+
+#contact-finalbackground {
+    background-color: rgba(13, 76, 122, 1); 
+    height: 100px;
+    grid-column: 1/10;
+    grid-row: 11/11;
+    margin:15px 0px;
 }
+
+#contact-background2 {
+    height: 525px;
+    grid-column: 1/10;
+    grid-row: 7/10;
+    background-color: #EDCD9A;
+}
+
+.contact-resources {
+    grid-column: 1/10;
+    grid-row: 8/9;
+    text-align: center;
+    padding: 25px 25px;
+}
+
+.contact-resources .last {
+    font-size: 12px;
+    margin:35px 0px;
+}
+
+
+
+.contact-info {
+    grid-row: 2/3;
+    grid-column: 3/8;
+}
+
+.contact-info h4 {
+    text-decoration: underline;
+}
+
+#contact-break {
+    height: 10px;
+    background-color: #EDCD9A;
+    grid-column: 2/8;
+    grid-row: 3/4;
+    margin-top: 25px;
+  }
+
+form {
+    /* Center the form on the page */
+    margin: 50px auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    grid-row: 4/7;
+    grid-column: 1/10;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+  
+  #feedback {
+      background-color: antiquewhite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: .5em;
+      /* make this element invisible until we are ready for it */
+      display: none;      
+  }
+  .moveDown {
+      margin-top: 3em;
+  }
+
+ 
+
 @media screen and (max-width: 950px) {
     #hero, .home-grid {
         display: block;

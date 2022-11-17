@@ -28,7 +28,7 @@
           </a>
     </div>
     </header>
-
+    
     <script>
         function myFunction() {
             var x = document.getElementById("myLinks");
@@ -77,11 +77,14 @@
                 document.getElementById("navbar").style.opacity = "1";
             }
         }
+
+        
         
         </script>
 
     <div id="hero">
-        <div id="background1">
+        <div id="hero-box">
+        <img id="hero-img" src="images/WhatYouWants.png" alt="People enjoying white water rafting">
         </div>
         
 
@@ -91,7 +94,62 @@
     </div>
 
 <main class="home-grid">
-    <div id="placeholder"></div>
+    <div id="contact-background1"></div>
+    <section class="contact-info">
+        <h4>US Customers:</h4>
+        <li>+1 (xxx)xxx-xxxx</li>
+        <li>us.support@vescboards.com</li>
+        <h4>For support outside the US:</h4>
+        <li>+33 (xxx)xxx-xxxx</li>
+        <li>eu.support.vescboards.com</li>
+    </section>
+    
+    <div id="contact-break"></div>
+
+    <div id="feedback"></div>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="name">Phone #:</label>
+            <input type="text" id="num" name="phone_num" />
+          </li>
+          <li>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </ul>
+      </form>
+      <div id="contact-background2"></div>
+        <section class="contact-resources">
+            <h4>Live Assistance</h4>
+            <p class="first">We offer live assistance via live streaming sessions on specified dates throughout the year. 
+                Our incredible contributors and volunteers have offered to book live sessions for groups to 
+                learn the process of designing, building, and repairing their very own custom VESC personal 
+                electronic vehicle. 
+                <br><br>Don't miss out on valuable information given at these build sessions that may help 
+                you avoid simple  mistakes while building your VESC. Click the link below to check out all 
+                of the social forums, websites, and clubs related to building your own VESC pev machine. 
+                Stay stoked :)</p>
+                <a class="btn-resources" href="resources.html">CHECK IT OUT</a>
+                <p class="last">*We plan a minimum of 12 build sessions a year, one at the beginning of each month. 
+                    You may send us an email about scheduling and purchasing a ticket to secure your spot 
+                    at the next expert build session. Build session tickets are a flat rate of $100 and allow 
+                    for any questions to be asked during the event, as well as assistance with any future 
+                    maintenance information by email for the life of the product.*</p>
+         </section>
+
+         <div id="contact-finalbackground"></div>
     
 </main>
 
@@ -111,5 +169,22 @@
         </a>
     </div>
 </footer>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
 </body>
 </html>
