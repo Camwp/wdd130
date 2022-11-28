@@ -756,14 +756,14 @@ form {
       }
 
       .h4diy-section2 {
-        background-color: #EDCD9A;
+        background-color: #f4f1de;
         margin-top:100px;
         text-align: center;
         padding-top: 1px;
         margin-bottom: -50px;
       }
       .h4diy-section3 {
-        background-color: #0D4C7A;
+        background-color: rgba(13, 76, 122, .65);
         margin-top: 100px;
         text-align: center;
         list-style-position: inside;
