@@ -478,7 +478,7 @@ footer .social img:hover {
     margin-left: -230px;
 }
 
-.contact-info ol {
+.contact-info #us, .contact-info #eu {
     text-decoration: underline;
     font-family: "Dynapuff", Arial, Helvetica;
     font-size: 24px;
@@ -501,8 +501,10 @@ form {
     border: 1px solid #ccc;
     border-radius: 1em;
     grid-row: 4/7;
-    grid-column: 1/10;
+    grid-column: 1/10;    
   }
+  
+
   
   ul {
     list-style: none;
